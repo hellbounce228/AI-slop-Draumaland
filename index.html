@@ -1,0 +1,367 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="is">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Malta — draumaeyjan</title>
+  <!-- Google Fonts: heading and body -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <!-- brief description for SEO -->
+  <meta name="description" content="Malta — staðreyndir, topp staðir og gagnlegar upplýsingar. Höfuðborg: Valletta. Tungumál: máltíska og enska. Staðsett í Miðjarðarhafinu.">
+</head>
+<body>
+  <!-- Site header with accessible nav and mobile menu button -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <!-- text logo -->
+      <a class="site-logo" href="#" aria-label="Malta — draumaeyjan">
+        <span class="logo-mark" aria-hidden="true">🏝️</span>
+        <span class="logo-text">Malta</span>
+      </a>
+
+      <!-- desktop navigation -->
+      <nav class="main-nav" role="navigation" aria-label="Aðalvalmynd">
+        <ul class="nav-list" role="menubar">
+          <li role="none"><a role="menuitem" href="#">Heim</a></li>
+
+          <!-- Um Möltu with submenu -->
+          
+
+          <li role="none"><a role="menuitem" href="#attr">Aðdráttarstaðir</a></li>
+
+          <!-- Ferðalög submenu -->
+          <li class="has-submenu" role="none">
+            <ul class="submenu" role="menu" aria-label="Ferðalög submenu">
+              <li role="none"><a role="menuitem" href="#">Samgöngur</a></li>
+              <li role="none"><a role="menuitem" href="#">Gisting</a></li>
+            </ul>
+          </li>
+
+          <li role="none"><a role="menuitem" href="#gallery">Gallerí</a></li>
+        </ul>
+      </nav>
+
+      <!-- mobile menu button -->
+      <button id="menu-toggle" class="menu-btn" aria-controls="mobile-menu" aria-expanded="false" aria-label="Opna valmyndu">
+        <span class="hamburger" aria-hidden="true"></span>
+        <span class="visually-hidden">Opna valmyndu</span>
+      </button>
+    </div>
+
+    <!-- mobile off-canvas menu -->
+    <aside id="mobile-menu" class="mobile-menu" aria-hidden="true" role="dialog" aria-label="Farsíma valmyndu">
+      <button id="mobile-close" class="mobile-close" aria-label="Loka valmyndu">✕</button>
+      <nav role="navigation" aria-label="Farsíma valmyndu">
+        <ul class="mobile-nav-list">
+          <li><a href="#">Heim</a></li>
+
+          <li>
+            <details>
+              <summary>Um Möltu</summary>
+              <ul>
+                <li><a href="#">Saga</a></li>
+                <li><a href="#">Menning</a></li>
+                <li><a href="#">Tungumál</a></li>
+              </ul>
+            </details>
+          </li>
+
+          <li><a href="#attr">Aðdráttarstaðir</a></li>
+
+          <li>
+            <details>
+              <summary>Ferðalög</summary>
+              <ul>
+                <li><a href="#">Samgöngur</a></li>
+                <li><a href="#">Gisting</a></li>
+              </ul>
+            </details>
+          </li>
+
+          <li><a href="#gallery">Gallerí</a></li>
+          <li><a href="#contact">Hafa samband</a></li>
+        </ul>
+      </nav>
+    </aside>
+  </header>
+
+  <!-- HERO with layered gradients and slight parallax background -->
+  <section class="hero" data-parallax>
+    <!-- SVG gradient accent -->
+    <svg class="hero-accent" viewBox="0 0 800 200" preserveAspectRatio="none" aria-hidden="true">
+      <defs>
+        <linearGradient id="accentGrad" x1="0" x2="1">
+          <stop offset="0" stop-color="rgba(255,255,255,0.15)"/>
+          <stop offset="1" stop-color="rgba(255,255,255,0.02)"/>
+        </linearGradient>
+      </defs>
+      <path d="M0,80 C150,200 350,0 800,80 L800,200 L0,200 Z" fill="url(#accentGrad)"/>
+    </svg>
+
+    <div class="hero-inner container">
+      <div class="hero-copy reveal">
+        <h2>Bohdan Chumakov</h2>
+        <br>
+        <h1>Malta — draumaeyjan</h1>
+        <p class="subtitle">Lítil eyja í Miðjarðarhafinu, höfuðborg: Valletta. Tungumál: máltíska og enska.</p>
+        <a class="btn btn-primary" href="#attr">Kanna</a>
+      
+      </div>
+
+      <div class="hero-media" aria-hidden="true">
+        <!-- decorative image (Valletta panorama) - free-to-use image from Wikimedia Commons -->
+        <!-- Source: https://commons.wikimedia.org/wiki/File:Panorama_of_Valletta.jpg (CC BY-SA 4.0) -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/68/Panorama_of_Valletta.jpg" alt="Panorama of Valletta, Malta" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Main content -->
+  <main id="main" class="site-main container">
+    <!-- Stutt um landið -->
+    <section id="about" class="section reveal">
+      <header class="section-header">
+        <h2>Stutt um landið</h2>
+        <p>Malta er eyjaklasí í Miðjarðarhafinu. Höfuðborg: Valletta. Stuttar staðreyndir og staðsetning.</p>
+      </header>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Staðsetning</h3>
+          <p>Malta er staðsett í suðri Evrópu, í Miðjarðarhafinu. Þjónustustaðir tengja landið við nágrannaríki.</p>
+        </article>
+
+        <article class="card">
+          <h3>Tungumál</h3>
+          <p>Tungumál: máltíska og enska; en margir tala einnig ítölsku og önnur tungumál. </p>
+        </article>
+
+        <article class="card">
+          <h3>Saga</h3>
+          <p>Rík saga með fornminjum — sjá t.d. Hagar Qim og múrbyggingar í Mdina.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Veðurfar og náttúra -->
+    <section id="weather" class="section reveal">
+  <header class="section-header">
+    <h2>Veðurfar og náttúra</h2>
+    <p>Mjög mildar vetrar og heitir sumrar; fallegar strendur, klettar og tærir skógarlausir bæjarstrendur.</p>
+  </header>
+
+  <!-- Icons revised: colorful, descriptive SVGs placed above each heading -->
+  <div class="icon-row" role="list">
+    <!-- Sun / Sólarrík -->
+    <div class="icon-item" role="listitem" aria-labelledby="sun-title">
+      <!-- svg uses a radial gradient so it's not a black silhouette -->
+      <svg class="icon" viewBox="0 0 48 48" width="64" height="64" role="img" aria-label="Sól - sólarrík">
+        <defs>
+          <radialGradient id="sunGrad" cx="50%" cy="40%" r="60%">
+            <stop offset="0%" stop-color="#fff38a"/>
+            <stop offset="40%" stop-color="#ffd166"/>
+            <stop offset="100%" stop-color="#ff7a66"/>
+          </radialGradient>
+        </defs>
+        <circle cx="24" cy="20" r="9" fill="url(#sunGrad)"/>
+        <!-- rays -->
+        <g stroke="#ffb07a" stroke-width="2" stroke-linecap="round" opacity="0.95">
+          <line x1="24" y1="2"  x2="24" y2="10"/>
+          <line x1="24" y1="30" x2="24" y2="38"/>
+          <line x1="2"  y1="20" x2="10" y2="20"/>
+          <line x1="38" y1="20" x2="46" y2="20"/>
+          <line x1="8"  y1="8"  x2="13" y2="13"/>
+          <line x1="35" y1="35" x2="40" y2="40"/>
+          <line x1="8"  y1="32" x2="13" y2="27"/>
+          <line x1="35" y1="13" x2="40" y2="8"/>
+        </g>
+      </svg>
+
+      <h4 id="sun-title">Sólarrík</h4>
+      <p>Langir sólardagar á sumrin, frábært til sunds og útivistar.</p>
+    </div>
+
+    <!-- Marine life / Sjávarlíf -->
+    <div class="icon-item" role="listitem" aria-labelledby="sea-title">
+      <!-- wave/fish icon with blue gradient -->
+      <svg class="icon" viewBox="0 0 48 48" width="64" height="64" role="img" aria-label="Sjávarlíf - blátt vatn og fiskar">
+        <defs>
+          <linearGradient id="seaGrad" x1="0" x2="1">
+            <stop offset="0%" stop-color="#60a5fa"/>
+            <stop offset="100%" stop-color="#06b6d4"/>
+          </linearGradient>
+        </defs>
+
+        <!-- stylized wave -->
+        <path d="M2 30 C12 18, 20 36, 30 30 C36 26, 42 22, 46 24" fill="none" stroke="url(#seaGrad)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        <!-- fish -->
+        <path d="M34 18 C36 16, 40 16, 42 18 C40 20, 36 20, 34 18 Z" fill="url(#seaGrad)"/>
+        <polygon points="30,18 26,22 30,26 32,22" fill="url(#seaGrad)"/>
+      </svg>
+
+      <h4 id="sea-title">Sjávarlíf</h4>
+      <p>Ríkt sjávarlíf, köfunarmöguleikar og tær strandir við Bláa lónið og Comino eyju.</p>
+    </div>
+
+    <!-- Vegetation / Gróður -->
+    <div class="icon-item" role="listitem" aria-labelledby="flora-title">
+      <!-- leaf icon with green gradient -->
+      <svg class="icon" viewBox="0 0 48 48" width="64" height="64" role="img" aria-label="Gróður - lauf og grænt landslag">
+        <defs>
+          <linearGradient id="leafGrad" x1="0" x2="1">
+            <stop offset="0%" stop-color="#9ae6b4"/>
+            <stop offset="100%" stop-color="#2f855a"/>
+          </linearGradient>
+        </defs>
+
+        <path d="M24 6 C10 12, 8 26, 24 40 C40 26, 38 12, 24 6 Z" fill="url(#leafGrad)" stroke="#14532d" stroke-width="1.2" />
+        <line x1="24" y1="6" x2="24" y2="40" stroke="#14532d" stroke-width="1.2" stroke-linecap="round" />
+        <path d="M24 18 C18 16, 14 20, 18 24" fill="none" stroke="#14532d" stroke-width="1" stroke-linecap="round"/>
+      </svg>
+
+      <h4 id="flora-title">Gróður</h4>
+      <p>Þurrari Mediteran gróður með litlum grösum, lyktarplöntum og fjölbreyttu strandlífi.</p>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Topp staðir -->
+    <section id="attr" class="section reveal">
+      <header class="section-header">
+        <h2>Topp staðir</h2>
+        <p>Staðir sem vert er að heimsækja: Valletta, Mdina, Bláa lónið og Hagar Qim.</p>
+      </header>
+
+      <div class="grid cards-grid">
+        <article class="place-card">
+          <!-- Valletta image (Wikimedia Commons CC BY-SA 4.0) -->
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/68/Panorama_of_Valletta.jpg" alt="Valletta panorama" />
+          <div class="card-body">
+            <h3>Valletta</h3>
+            <p>Höfuðborg Valletta — söguleg borg með minjum og fallegum sundum.</p>
+          </div>
+        </article>
+
+        <article class="place-card">
+          <!-- Mdina image (Wikimedia Commons CC BY-SA 4.0) -->
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/58/Mdina.jpg" alt="Mdina gate" />
+          <div class="card-body">
+            <h3>Mdina</h3>
+            <p>Gamla höfuðborgin Mdina, þröngar götur og söguleg bygging.</p>
+          </div>
+        </article>
+
+        <article class="place-card">
+          <!-- Blue Lagoon image (Wikimedia Commons CC BY-SA 3.0) -->
+          <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Blue_Lagoon%2C_Comino.jpg" alt="Blue Lagoon, Comino" />
+          <div class="card-body">
+            <h3>Bláa lónið</h3>
+            <p>Blue Lagoon á Comino eyju — kristaltær vatn og frábært sund.</p>
+          </div>
+        </article>
+
+        <article class="place-card">
+          <!-- Hagar Qim image (Wikimedia Commons CC BY-SA 2.0) -->
+          <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/%C4%A6a%C4%A1ar_Qim.jpg" alt="Hagar Qim temples" />
+          <div class="card-body">
+            <h3>Hagar Qim</h3>
+            <p>Forngripi og steinbyggingar — must-see við suðurströndina.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Hagnýt upplýsingar -->
+    <section id="practical" class="section reveal">
+      <header class="section-header">
+        <h2>Hagnýt upplýsingar</h2>
+        <p>Verðlag og ferðamáti — stutt yfirlit.</p>
+      </header>
+
+      <div class="practical-grid">
+        <aside class="practical-card">
+          <h4>Hvernig kemst þú þangað?</h4>
+          <p>Flug til Malta frá stærri borgum; tengibrautir með bátum til Comino eyjar.</p>
+        </aside>
+
+        <article class="practical-card">
+          <h4>Verðlag</h4>
+          <p>Verð eru mismunandi en eru almennt sanngjörn fyrir Miðjarðarhafssvæðið; borgir eins og Valletta geta verið dýrari.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Gallerí -->
+    <section id="gallery" class="section reveal">
+      <header class="section-header">
+        <h2>Gallerí</h2>
+        <p>Smelltu til að skoða — sýnishorn af myndum.</p>
+      </header>
+
+      <div class="gallery-grid">
+        <!-- Using the same Wikimedia Commons images (free licenses); include alt/caption -->
+        <figure>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/68/Panorama_of_Valletta.jpg" alt="Valletta panorama">
+          <figcaption>Valletta panorama</figcaption>
+        </figure>
+
+        <figure>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/58/Mdina.jpg" alt="Mdina">
+          <figcaption>Mdina - Vilhena gate</figcaption>
+        </figure>
+
+        <figure>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Blue_Lagoon%2C_Comino.jpg" alt="Blue Lagoon">
+          <figcaption>Bláa lónið (Blue Lagoon)</figcaption>
+        </figure>
+
+        <figure>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/%C4%A6a%C4%A1ar_Qim.jpg" alt="Hagar Qim">
+          <figcaption>Hagar Qim</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Tengiliðareyðublað -->
+    
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Malta — draumaeyjan. </p>
+      <nav aria-label="Fótavalmynd">
+        <a>Bohdan Chumakov</a>
+        <br>
+        <a>barsukche@gmail.com</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Minimal JS: menu toggle + reveal on scroll (keeps JS under ~40 lines) -->
+  <script>
+    // toggle mobile menu (accessibility-aware)
+    const btn = document.getElementById('menu-toggle');
+    const mobile = document.getElementById('mobile-menu');
+    const closeBtn = document.getElementById('mobile-close');
+    btn.addEventListener('click', () => {
+      const open = document.body.classList.toggle('menu-open');
+      btn.setAttribute('aria-expanded', open);
+      mobile.setAttribute('aria-hidden', !open);
+    });
+    closeBtn.addEventListener('click', ()=>{ document.body.classList.remove('menu-open'); btn.setAttribute('aria-expanded', 'false'); mobile.setAttribute('aria-hidden','true'); });
+
+    // small reveal-on-scroll using IntersectionObserver (adds class; animations in CSS)
+    const io = new IntersectionObserver((entries)=> {
+      entries.forEach(e=> { if (e.isIntersecting) { e.target.classList.add('in-view'); io.unobserve(e.target); } });
+    }, {threshold: 0.15});
+    document.querySelectorAll('.reveal').forEach(el=> io.observe(el));
+
+    // set year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
